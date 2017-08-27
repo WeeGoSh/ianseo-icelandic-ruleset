@@ -87,85 +87,39 @@ function CreateStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
     $i=0;
 
     // Only open class
-    // Indoor: 40 TGT_IND_6_big10 18
-    // Outdoor: 122 TGT_OUT_FULL 70
     CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetR, 5, 3, 1, 5, 3, 1, 'RM',  'Recurve Men', 1, 240, 255, 0, 0, '', '', $TargetSizeR, $DistanceR);
-    // Indoor: 40 TGT_IND_6_big10 18
-    // Outdoor: 122 TGT_OUT_FULL 70
     CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetR, 5, 3, 1, 5, 3, 1, 'RW',  'Recurve Women', 1, 240, 255, 0, 0, '', '', $TargetSizeR, $DistanceR);
-    // Indoor: 40 TGT_IND_6_small10 18
-    // Outdoor: 80 TGT_OUT_5_big10 50
     CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetC, 5, 3, 1, 5, 3, 1, 'CM',  'Compound Men', 0, 240, 255, 0, 0, '', '', $TargetSizeC, $DistanceC);
-    // Indoor: 40 TGT_IND_6_small10 18
-    // Outdoor: 80 TGT_OUT_5_big10 50
     CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetC, 5, 3, 1, 5, 3, 1, 'CW',  'Compound Women', 0, 240, 255, 0, 0, '', '', $TargetSizeC, $DistanceC);
 
     if ($SubRule==1) { // All Classes
-        // Indoor: 40 TGT_IND_6_big10 18
-        // Outdoor: 122 TGT_OUT_FULL 60
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRM, 5, 3, 1, 5, 3, 1, 'RMM',  'Recurve Master Men', 1, 240, 255, 0, 0, '', '', $TargetSizeRM, $DistanceRM);
-        // Indoor: 40 TGT_IND_6_big10 18
-        // Outdoor: 122 TGT_OUT_FULL 60
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRM, 5, 3, 1, 5, 3, 1, 'RMW',  'Recurve Master Women', 1, 240, 255, 0, 0, '', '', $TargetSizeRM, $DistanceRM);
-        // Indoor: 40 TGT_IND_6_small10 18
-        // Outdoor: 80 TGT_OUT_5_big10 50
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCM, 5, 3, 1, 5, 3, 1, 'CMM',  'Compound Master Men', 0, 240, 255, 0, 0, '', '', $TargetSizeCM, $DistanceCM);
-        // Indoor: 40 TGT_IND_6_small10 18
-        // Outdoor: 80 TGT_OUT_5_big10 50
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCM, 5, 3, 1, 5, 3, 1, 'CMW',  'Compound Master Women', 0, 240, 255, 0, 0, '', '', $TargetSizeRM, $DistanceCM);
 
-        // Indoor: 40 TGT_IND_6_big10 18
-        // Outdoor: 122 TGT_OUT_FULL 70
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRJ, 5, 3, 1, 5, 3, 1, 'RJM',  'Recurve Junior Men', 1, 240, 255, 0, 0, '', '', $TargetSizeRJ, $DistanceRJ);
-        // Indoor: 40 TGT_IND_6_big10 18
-        // Outdoor: 122 TGT_OUT_FULL 70
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRJ, 5, 3, 1, 5, 3, 1, 'RJW',  'Recurve Junior Women', 1, 240, 255, 0, 0, '', '', $TargetSizeRJ, $DistanceRJ);
-        // Indoor: 40 TGT_IND_6_big10 18
-        // Outdoor: 80 TGT_OUT_5_big10 50
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCJ, 5, 3, 1, 5, 3, 1, 'CJM',  'Compound Junior Men', 0, 240, 255, 0, 0, '', '', $TargetSizeCJ, $DistanceCJ);
-        // Indoor: 40 TGT_IND_6_big10 18
-        // Outdoor: 80 TGT_OUT_5_big10 50
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCJ, 5, 3, 1, 5, 3, 1, 'CJW',  'Compound Junior Women', 0, 240, 255, 0, 0, '', '', $TargetSizeCJ, $DistanceCJ);
 
-        // Indoor: 40 TGT_IND_6_big10 18
-        // Outdoor: 122 TGT_OUT_FULL 60
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRC, 5, 3, 1, 5, 3, 1, 'RCM',  'Recurve Cadet Men', 1, 240, 255, 0, 0, '', '', $TargetSizeRC, $DistanceRC);
-        // Indoor: 40 TGT_IND_6_big10 18
-        // Outdoor: 122 TGT_OUT_FULL 60
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRC, 5, 3, 1, 5, 3, 1, 'RCW',  'Recurve Cadet Women', 1, 240, 255, 0, 0, '', '', $TargetSizeRC, $DistanceRC);
-        // Indoor: 40 TGT_IND_6_big10 18
-        // Outdoor: 80 TGT_OUT_5_big10 50
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCC, 5, 3, 1, 5, 3, 1, 'CCM',  'Compound Cadet Men', 0, 240, 255, 0, 0, '', '', $TargetSizeCC, $DistanceCC);
-        // Indoor: 40 TGT_IND_6_big10 18
-        // Outdoor: 80 TGT_OUT_5_big10 50
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCC, 5, 3, 1, 5, 3, 1, 'CCW',  'Compound Cadet Women', 0, 240, 255, 0, 0, '', '', $TargetSizeCC, $DistanceCC);
 
-        // Indoor: 60 TGT_IND_1_big10 12
-        // Outdoor: 122 TGT_OUT_FULL 40
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRN, 5, 3, 1, 5, 3, 1, 'RNM',  'Recurve Nordic Cadet Men', 1, 240, 255, 0, 0, '', '', $TargetSizeRN, $DistanceRN);
-        // Indoor: 60 TGT_IND_1_big10 12
-        // Outdoor: 122 TGT_OUT_FULL 40
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRN, 5, 3, 1, 5, 3, 1, 'RNW',  'Recurve Nordic Cadet Women', 1, 240, 255, 0, 0, '', '', $TargetSizeRN, $DistanceRN);
-        // Indoor: 60 TGT_IND_1_big10 12
-        // Outdoor: 122 TGT_OUT_FULL 40
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCN, 5, 3, 1, 5, 3, 1, 'CNM',  'Compound Nordic Cadet Men', 0, 240, 255, 0, 0, '', '', $TargetSizeCN, $DistanceCN);
-        // Indoor: 60 TGT_IND_1_big10 12
-        // Outdoor: 122 TGT_OUT_FULL 40
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCN, 5, 3, 1, 5, 3, 1, 'CNW',  'Compound Nordic Cadet Women', 0, 240, 255, 0, 0, '', '', $TargetSizeCN, $DistanceCN);
 
-        // Indoor: 40 TGT_IND_1_big10 18
-        // Outdoor: 122 TGT_OUT_FULL 60
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRB, 5, 3, 1, 5, 3, 1, 'RBM',  'Recurve Beginner Men', 1, 240, 255, 0, 0, '', '', $TargetSizeRB, $DistanceRB);
-        // Indoor: 40 TGT_IND_1_big10 18
-        // Outdoor: 122 TGT_OUT_FULL 60
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRB, 5, 3, 1, 5, 3, 1, 'RBW',  'Recurve Beginner Women', 1, 240, 255, 0, 0, '', '', $TargetSizeRB, $DistanceRB);
-        // Indoor: 40 TGT_IND_1_big10 18
-        // Outdoor: 80 TGT_OUT_5_big10 50
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCB, 5, 3, 1, 5, 3, 1, 'CBM',  'Compound Beginner Men', 0, 240, 255, 0, 0, '', '', $TargetSizeCB, $DistanceCB);
-        // Indoor: 40 TGT_IND_1_big10 18
-        // Outdoor: 80 TGT_OUT_5_big10 50
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCB, 5, 3, 1, 5, 3, 1, 'CBW',  'Compound Beginner Women', 0, 240, 255, 0, 0, '', '', $TargetSizeCB, $DistanceCB);
     }
+
+    CreateEvent($TourId, $i++, 1, 1, $Phase, $TargetR, 5, 3, 1, 5, 3, 1, 'RX', 'Recurve Mixed Team', 1, 240, 255, 0, 0, '', '', $TargetSizeR, $DistanceR);
 }
 
 function InsertStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
@@ -198,4 +152,16 @@ function InsertStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
     InsertClassEvent($TourId, 0, 1, 'RBW',  'R', 'BW');
     InsertClassEvent($TourId, 0, 1, 'CBM',  'C', 'BM');
     InsertClassEvent($TourId, 0, 1, 'CBW',  'C', 'BW');
+
+    InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'M');
+    InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'W');
+    InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'MM');
+    InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'MW');
+    InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'JM');
+    InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'JW');
+    InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'CM');
+    InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'CW');
+    InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'BM');
+    InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'BW');
 }
+
