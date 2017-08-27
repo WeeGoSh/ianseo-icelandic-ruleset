@@ -1,43 +1,33 @@
 <?php
 
-// Verify location of files to copy
-//
-// Verify destination directory
-//
-// Copy files
-//
-// Report on progress
-
-ini_set("display_errors", 1); error_reporting(E_ALL);
-
 require_once(dirname(dirname(dirname(__FILE__))) . '/config.php');
 
-$sourcedir = getcwd() . '/IS';
-$destdir = dirname(dirname(getcwd())) . '/Sets/IS';
+$source_dir = getcwd() . '/IS';
+$destination_dir = dirname(dirname(getcwd())) . '/Sets/IS';
 
 include('Common/Templates/head.php');
 
-echo 'source: ' . $sourcedir . '<br>';
-echo 'dest: ' . $destdir . '<br>';
+echo 'source: ' . $source_dir . '<br>';
+echo 'destination: ' . $destination_dir . '<br>';
 
 echo 'copying...<br>';
-xcopy($sourcedir, $destdir);
+x_copy($source_dir, $destination_dir);
 echo 'done<br>';
 
 include('Common/Templates/tail.php');
 
-function xcopy($source, $dest, $permissions = 0755)
+function x_copy($source, $destination, $permissions = 0755)
 {
     if (is_link($source)) {
-        return symlink(readlink($source), $dest);
+        return symlink(readlink($source), $destination);
     }
 
     if (is_file($source)) {
-        return copy($source, $dest);
+        return copy($source, $destination);
     }
 
-    if (!is_dir($dest)) {
-        mkdir($dest, $permissions);
+    if (!is_dir($destination)) {
+        mkdir($destination, $permissions);
     }
 
     $dir = dir($source);
@@ -45,11 +35,9 @@ function xcopy($source, $dest, $permissions = 0755)
         if ($entry == '.' || $entry == '..') {
             continue;
         }
-        xcopy("$source/$entry", "$dest/$entry", $permissions);
+        x_copy("$source/$entry", "$destination/$entry", $permissions);
     }
 
     $dir->close();
     return true;
 }
-
-?>
