@@ -15,19 +15,19 @@ function CreateStandardDivisions($TourId, $Type=1, $SubRule=0) {
 
 function CreateStandardClasses($TourId, $SubRule, $Type) {
     $i=1;
-    CreateClass($TourId, $i++, 1, 99, 0, 'M', 'M', 'Men', 1, 'R,C');
-    CreateClass($TourId, $i++, 1, 99, 1, 'W', 'W', 'Women', 1, 'R,C');
-    if ($SubRule==1) { // All Classes
-        CreateClass($TourId, $i++, 50, 99, 0, 'MM', 'MM,M', 'Master Men', 1, 'R,C');
-        CreateClass($TourId, $i++, 50, 99, 1, 'MW', 'MW,W', 'Master Women', 1, 'R,C');
-        CreateClass($TourId, $i++, 18, 20, 0, 'JM', 'JM,M', 'Cadet Men', 1, 'R,C');
-        CreateClass($TourId, $i++, 18, 20, 1, 'JW', 'JW,W', 'Cadet Women', 1, 'R,C');
-        CreateClass($TourId, $i++, 15, 17, 0, 'CM', 'CM,JM,M', 'Junior Men', 1, 'R,C');
-        CreateClass($TourId, $i++, 15, 17, 1, 'CW', 'CW,JW,W', 'Junior Women', 1, 'R,C');
-        CreateClass($TourId, $i++, 1, 14, 0, 'NM', 'NM,CM,JM,M', 'Nordic Cadet Men', 1, 'R,C');
-        CreateClass($TourId, $i++, 1, 14, 1, 'NW', 'NW,CW,JW,W', 'Nordic Cadet Women', 1, 'R,C');
-        CreateClass($TourId, $i++, 1, 99, 0, 'BM', 'BM', 'Beginner Men', 1, 'R,C');
-        CreateClass($TourId, $i++, 1, 99, 1, 'BW', 'BW', 'Beginner Women', 1, 'R,C');
+    CreateClass($TourId, $i++, 1, 99, 0, 'M', 'M', 'Men', 1, '');
+    CreateClass($TourId, $i++, 1, 99, 1, 'W', 'W', 'Women', 1, '');
+    if ($SubRule==1) { // All ClassesB
+        CreateClass($TourId, $i++, 50, 99, 0, 'MM', 'MM,M', 'Master Men', 1, '');
+        CreateClass($TourId, $i++, 50, 99, 1, 'MW', 'MW,W', 'Master Women', 1, '');
+        CreateClass($TourId, $i++, 18, 20, 0, 'JM', 'JM,M', 'Cadet Men', 1, '');
+        CreateClass($TourId, $i++, 18, 20, 1, 'JW', 'JW,W', 'Cadet Women', 1, '');
+        CreateClass($TourId, $i++, 15, 17, 0, 'CM', 'CM,JM,M', 'Junior Men', 1, '');
+        CreateClass($TourId, $i++, 15, 17, 1, 'CW', 'CW,JW,W', 'Junior Women', 1, '');
+        CreateClass($TourId, $i++, 1, 14, 0, 'NM', 'NM,CM,JM,M', 'Nordic Cadet Men', 1, '');
+        CreateClass($TourId, $i++, 1, 14, 1, 'NW', 'NW,CW,JW,W', 'Nordic Cadet Women', 1, '');
+        CreateClass($TourId, $i++, 1, 99, 0, 'BM', 'BM', 'Beginner Men', 1, '');
+        CreateClass($TourId, $i++, 1, 99, 1, 'BW', 'BW', 'Beginner Women', 1, '');
     }
 }
 
