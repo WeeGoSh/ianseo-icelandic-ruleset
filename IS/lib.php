@@ -97,8 +97,6 @@ function CreateStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRJ, 5, 3, 1, 5, 3, 1, 'RJW',  'Recurve Junior Women', 1, 240, 255, 0, 0, '', '', $TargetSizeRJ, $DistanceRJ);
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRC, 5, 3, 1, 5, 3, 1, 'RCM',  'Recurve Cadet Men', 1, 240, 255, 0, 0, '', '', $TargetSizeRC, $DistanceRC);
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRC, 5, 3, 1, 5, 3, 1, 'RCW',  'Recurve Cadet Women', 1, 240, 255, 0, 0, '', '', $TargetSizeRC, $DistanceRC);
-        CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRN, 5, 3, 1, 5, 3, 1, 'RNM',  'Recurve Nordic Cadet Men', 1, 240, 255, 0, 0, '', '', $TargetSizeRN, $DistanceRN);
-        CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRN, 5, 3, 1, 5, 3, 1, 'RNW',  'Recurve Nordic Cadet Women', 1, 240, 255, 0, 0, '', '', $TargetSizeRN, $DistanceRN);
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRB, 5, 3, 1, 5, 3, 1, 'RBM',  'Recurve Beginner Men', 1, 240, 255, 0, 0, '', '', $TargetSizeRB, $DistanceRB);
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetRB, 5, 3, 1, 5, 3, 1, 'RBW',  'Recurve Beginner Women', 1, 240, 255, 0, 0, '', '', $TargetSizeRB, $DistanceRB);
     }
@@ -112,8 +110,6 @@ function CreateStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCJ, 5, 3, 1, 5, 3, 1, 'CJW', 'Compound Junior Women', 0, 240, 255, 0, 0, '', '', $TargetSizeCJ, $DistanceCJ);
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCC, 5, 3, 1, 5, 3, 1, 'CCM', 'Compound Cadet Men', 0, 240, 255, 0, 0, '', '', $TargetSizeCC, $DistanceCC);
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCC, 5, 3, 1, 5, 3, 1, 'CCW', 'Compound Cadet Women', 0, 240, 255, 0, 0, '', '', $TargetSizeCC, $DistanceCC);
-        CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCN, 5, 3, 1, 5, 3, 1, 'CNM', 'Compound Nordic Cadet Men', 0, 240, 255, 0, 0, '', '', $TargetSizeCN, $DistanceCN);
-        CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCN, 5, 3, 1, 5, 3, 1, 'CNW', 'Compound Nordic Cadet Women', 0, 240, 255, 0, 0, '', '', $TargetSizeCN, $DistanceCN);
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCB, 5, 3, 1, 5, 3, 1, 'CBM', 'Compound Beginner Men', 0, 240, 255, 0, 0, '', '', $TargetSizeCB, $DistanceCB);
         CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetCB, 5, 3, 1, 5, 3, 1, 'CBW', 'Compound Beginner Women', 0, 240, 255, 0, 0, '', '', $TargetSizeCB, $DistanceCB);
 
