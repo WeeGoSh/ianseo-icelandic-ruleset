@@ -120,6 +120,7 @@ function CreateStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
     }
 
     CreateEvent($TourId, $i++, 1, 1, $Phase, $TargetR, 5, 3, 1, 5, 3, 1, 'RX', 'Recurve Mixed Team', 1, 240, 255, 0, 0, '', '', $TargetSizeR, $DistanceR);
+    CreateEvent($TourId, $i++, 1, 1, $Phase, $TargetR, 5, 3, 1, 5, 3, 1, 'CX', 'Compound Mixed Team', 0, 240, 255, 0, 0, '', '', $TargetSizeR, $DistanceR);
 }
 
 function InsertStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
@@ -161,7 +162,22 @@ function InsertStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
     InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'JW');
     InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'CM');
     InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'CW');
+    InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'NM');
+    InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'NW');
     InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'BM');
     InsertClassEvent($TourId, 1, 3, 'RX', 'R', 'BW');
+
+    InsertClassEvent($TourId, 1, 3, 'CX', 'C', 'M');
+    InsertClassEvent($TourId, 1, 3, 'CX', 'C', 'W');
+    InsertClassEvent($TourId, 1, 3, 'CX', 'C', 'MM');
+    InsertClassEvent($TourId, 1, 3, 'CX', 'C', 'MW');
+    InsertClassEvent($TourId, 1, 3, 'CX', 'C', 'JM');
+    InsertClassEvent($TourId, 1, 3, 'CX', 'C', 'JW');
+    InsertClassEvent($TourId, 1, 3, 'CX', 'C', 'CM');
+    InsertClassEvent($TourId, 1, 3, 'CX', 'C', 'CW');
+    InsertClassEvent($TourId, 1, 3, 'CX', 'C', 'NM');
+    InsertClassEvent($TourId, 1, 3, 'CX', 'C', 'NW');
+    InsertClassEvent($TourId, 1, 3, 'CX', 'C', 'BM');
+    InsertClassEvent($TourId, 1, 3, 'CX', 'C', 'BW');
 }
 
