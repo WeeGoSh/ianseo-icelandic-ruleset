@@ -56,7 +56,7 @@ function CreateStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
 
     // Junior
     $TargetRJ=($Outdoor ? TGT_OUT_FULL : TGT_IND_6_big10);
-    $TargetCJ=($Outdoor ? TGT_OUT_5_big10 : TGT_IND_6_big10);
+    $TargetCJ=($Outdoor ? TGT_OUT_5_big10 : TGT_IND_6_small10);
     $TargetSizeRJ=($Outdoor ? 122 : 40);
     $TargetSizeCJ=($Outdoor ? 80 : 40);
     $DistanceRJ=($Outdoor ? 70 : 18);
@@ -64,7 +64,7 @@ function CreateStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
 
     // Cadet
     $TargetRC=($Outdoor ? TGT_OUT_FULL : TGT_IND_6_big10);
-    $TargetCC=($Outdoor ? TGT_OUT_5_big10 : TGT_IND_6_big10);
+    $TargetCC=($Outdoor ? TGT_OUT_5_big10 : TGT_IND_6_small10);
     $TargetSizeRC=($Outdoor ? 122 : 40);
     $TargetSizeCC=($Outdoor ? 80 : 40);
     $DistanceRC=($Outdoor ? 60 : 18);
@@ -80,7 +80,7 @@ function CreateStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
 
     // Beginner
     $TargetRB=($Outdoor ? TGT_OUT_FULL : TGT_IND_1_big10);
-    $TargetCB=($Outdoor ? TGT_OUT_5_big10 : TGT_IND_1_big10);
+    $TargetCB=($Outdoor ? TGT_OUT_5_big10 : TGT_IND_1_small10);
     $TargetSizeRB=($Outdoor ? 122 : 40);
     $TargetSizeCB=($Outdoor ? 80 : 40);
     $DistanceRB=($Outdoor ? 60 : 18);

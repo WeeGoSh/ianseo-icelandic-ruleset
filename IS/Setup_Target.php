@@ -77,11 +77,23 @@ CreateFinals($TourId);
 $i=1;
 switch($TourType) {
 	case 6: // Indoor
+        /*
+         * Default: Full-face U-15 Recurve, Barebow 60cm large-ten
+         * Default: Full-face U-15 Compound 60cm small-ten
+         * Full-face R 40cm large-ten
+         *
+         */
+        // nordic cadets
+        CreateTargetFace($TourId, $i++, '~DefaultRN', 'RN_', '1', 1, 60, 1, 60);
+        CreateTargetFace($TourId, $i++, '~DefaultCN', 'CN_', '1', 3, 60, 3, 60);
+        CreateTargetFace($TourId, $i++, '~DefaultBN', 'BN_', '1', 1, 60, 1, 60);
+        // other
         CreateTargetFace($TourId, $i++, '~Default', 'R%', '1', 2, 40, 2, 40);
         CreateTargetFace($TourId, $i++, '~DefaultCO', 'C%', '1', 4, 40, 4, 40);
-        CreateTargetFace($TourId, $i++, '~DefaultBB', 'B%', '1', 2, 40, 2, 40);
+        CreateTargetFace($TourId, $i++, '~DefaultBB', 'B%', '1', 1, 40, 1, 40);
         // optional target faces
-        CreateTargetFace($TourId, $i++, '~Option1', 'R%', '',  1, 40, 1, 40);
+        CreateTargetFace($TourId, $i++, '~OptionalR', 'R%', '',  1, 40, 1, 40);
+        CreateTargetFace($TourId, $i++, '~OptionalCB', 'CB_', '',  3, 40, 3, 40);
 		break;
 }
 
