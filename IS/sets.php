@@ -11,7 +11,7 @@ $SetType['IS']['rules']=array();
 foreach($AllowedTypes as $val) {
 	$SetType['IS']['types']["$val"]=$TourTypes[$val];
 	$SetType['IS']['rules']["$val"]=array(
-		'SetAllClass',
+		'SetChampionship',
 	    'SetAduClass',
 		);
 }
