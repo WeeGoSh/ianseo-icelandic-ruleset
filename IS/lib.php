@@ -38,10 +38,13 @@ function CreateStandardSubClasses($TourId) {
 function CreateStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
     $TargetR=($Outdoor ? TGT_OUT_FULL : TGT_IND_6_big10);
     $TargetC=($Outdoor ? TGT_OUT_5_big10 : TGT_IND_6_small10);
+    $TargetB=($Outdoor ? TGT_OUT_FULL : TGT_IND_1_big10);
     $TargetSizeR=($Outdoor ? 122 : 40);
     $TargetSizeC=($Outdoor ? 80 : 40);
+    $TargetSizeB=($Outdoor ? 80 : 40);
     $DistanceR=($Outdoor ? 70 : 18);
     $DistanceC=($Outdoor ? 50 : 18);
+    $DistanceB=($Outdoor ? 30 : 18);
 
     // Master
     $TargetRM=($Outdoor ? TGT_OUT_FULL : TGT_IND_6_big10);
