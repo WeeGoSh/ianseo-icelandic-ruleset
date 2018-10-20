@@ -14,10 +14,19 @@ function CreateStandardDivisions($TourId, $Type=1, $SubRule=0) {
 }
 
 function CreateStandardClasses($TourId, $SubRule, $Type) {
+    /*
+    Standard Classes = Age Classes
+    */
     $i=1;
+
+    if ($SubRule==3) { // All in one
+        CreateClass($TourId, $i++, 1, 99, -1, 'U', 'U', 'Universal');
+        return;
+    }
+
     CreateClass($TourId, $i++, 1, 99, 0, 'M', 'M', 'Men', 1, '');
     CreateClass($TourId, $i++, 1, 99, 1, 'W', 'W', 'Women', 1, '');
-    if ($SubRule==1) { // All ClassesB
+    if ($SubRule==1) { // All Classes
         CreateClass($TourId, $i++, 50, 99, 0, 'MM', 'MM,M', 'Master Men', 1, '');
         CreateClass($TourId, $i++, 50, 99, 1, 'MW', 'MW,W', 'Master Women', 1, '');
         CreateClass($TourId, $i++, 18, 20, 0, 'JM', 'JM,M', 'Cadet Men', 1, '');
@@ -36,6 +45,10 @@ function CreateStandardSubClasses($TourId) {
 }
 
 function CreateStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
+    /*
+    StandardEvents = Eliminations/Matches
+    */
+
     $TargetR=($Outdoor ? TGT_OUT_FULL : TGT_IND_6_big10);
     $TargetC=($Outdoor ? TGT_OUT_5_big10 : TGT_IND_6_small10);
     $TargetB=($Outdoor ? TGT_OUT_FULL : TGT_IND_1_big10);
@@ -89,6 +102,12 @@ function CreateStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
     $Phase=8;
     $i=0;
 
+    if ($SubRule==3) {
+        CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetR, 5, 3, 1, 5, 3, 1, 'R',  'Recurve', 1, 240, 255, 0, 0, '', '', $TargetSizeR, $DistanceR);    
+        CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetC, 5, 3, 1, 5, 3, 1, 'C',  'Compound', 0, 240, 255, 0, 0, '', '', $TargetSizeC, $DistanceC);
+        return;
+    }
+
     // Only open class
     CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetR, 5, 3, 1, 5, 3, 1, 'RM',  'Recurve Men', 1, 240, 255, 0, 0, '', '', $TargetSizeR, $DistanceR);
     CreateEvent($TourId, $i++, 0, 0, $Phase, $TargetR, 5, 3, 1, 5, 3, 1, 'RW',  'Recurve Women', 1, 240, 255, 0, 0, '', '', $TargetSizeR, $DistanceR);
@@ -127,6 +146,16 @@ function CreateStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
 }
 
 function InsertStandardEvents($TourId, $TourType, $SubRule, $Outdoor=true) {
+    /*
+    Match category configurations
+    */
+
+    if ($SubRule==3) {
+        InsertClassEvent($TourId, 0, 1, 'R',  'R', 'U');
+        InsertClassEvent($TourId, 0, 1, 'C',  'C', 'U');
+        return;
+    }
+
     InsertClassEvent($TourId, 0, 1, 'RM',  'R', 'M');
     InsertClassEvent($TourId, 0, 1, 'RW',  'R', 'W');
     InsertClassEvent($TourId, 0, 1, 'CM',  'C', 'M');
