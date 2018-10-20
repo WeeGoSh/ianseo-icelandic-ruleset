@@ -100,7 +100,6 @@ switch($TourType) {
 
         */
         CreateTargetFace($TourId, $i++, '122cm (1-10)', 'R%', '1', 5, 122, 5, 122);
-        CreateTargetFace($TourId, $i++, '80cm (5-10)', 'CN_', '1', 5, 122, 5, 122);
         CreateTargetFace($TourId, $i++, '80cm (5-10)', 'C%', '1', 9, 80, 9, 80);
         CreateTargetFace($TourId, $i++, '80cm (1-10)', 'B%', '1', 5, 80, 5, 80);
 }
